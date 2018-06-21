@@ -37,7 +37,7 @@ $ cd MeetPoint
 ``` 
 $ pod install
 ```
-### Setup tokens
+#### Setup tokens
 - Open the Info.plist file and setup your `FacebookAppID`
 - Open the AppDelegate.swift and enter your Google Places api key( `GMSPlacesClient.provideAPIKey("ENTER YOUR API KEY HERE")` )
 #### Setup Firebase 
