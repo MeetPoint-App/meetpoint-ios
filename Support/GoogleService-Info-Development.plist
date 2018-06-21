@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>AD_UNIT_ID_FOR_BANNER_TEST</key>
+	<string>ca-app-pub-3940256099942544/2934735716</string>
+	<key>AD_UNIT_ID_FOR_INTERSTITIAL_TEST</key>
+	<string>ca-app-pub-3940256099942544/4411468910</string>
+	<key>CLIENT_ID</key>
+	<string>894867950138-2l6d8j6g1ipvo4npid5l223oadim0e7l.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.894867950138-2l6d8j6g1ipvo4npid5l223oadim0e7l</string>
+	<key>API_KEY</key>
+	<string>AIzaSyCfSZ15DqeZKhits68jOFMwRl6f3Qq10qM</string>
+	<key>GCM_SENDER_ID</key>
+	<string>894867950138</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.yusufkildan.MeetPoint</string>
+	<key>PROJECT_ID</key>
+	<string>meetpoint-test</string>
+	<key>STORAGE_BUCKET</key>
+	<string>meetpoint-test.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<true></true>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<false></false>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:894867950138:ios:d6242bd28b05926b</string>
+	<key>DATABASE_URL</key>
+	<string>https://meetpoint-test.firebaseio.com</string>
+</dict>
+</plist>

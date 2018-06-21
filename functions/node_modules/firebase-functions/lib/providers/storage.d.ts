@@ -1,0 +1,79 @@
+import { CloudFunction, EventContext } from '../cloud-functions';
+/**
+ * The optional bucket function allows you to choose which buckets' events to handle.
+ * This step can be bypassed by calling object() directly, which will use the bucket that
+ * the Firebase SDK for Cloud Storage uses.
+ */
+export declare function bucket(bucket?: string): BucketBuilder;
+export declare function object(): ObjectBuilder;
+export declare class BucketBuilder {
+    private triggerResource;
+    /** Handle events for objects in this bucket. */
+    object(): ObjectBuilder;
+}
+export declare class ObjectBuilder {
+    private triggerResource;
+    /** Respond to archiving of an object, this is only for buckets that enabled object versioning. */
+    onArchive(handler: (object: ObjectMetadata, context: EventContext) => PromiseLike<any> | any): CloudFunction<ObjectMetadata>;
+    /** Respond to the deletion of an object (not to archiving, if object versioning is enabled). */
+    onDelete(handler: (object: ObjectMetadata, context: EventContext) => PromiseLike<any> | any): CloudFunction<ObjectMetadata>;
+    /** Respond to the successful creation of an object. */
+    onFinalize(handler: (object: ObjectMetadata, context: EventContext) => PromiseLike<any> | any): CloudFunction<ObjectMetadata>;
+    /** Respond to metadata updates of existing objects. */
+    onMetadataUpdate(handler: (object: ObjectMetadata, context: EventContext) => PromiseLike<any> | any): CloudFunction<ObjectMetadata>;
+    private onOperation(handler, eventType);
+}
+export interface ObjectMetadata {
+    kind: string;
+    id: string;
+    bucket: string;
+    storageClass: string;
+    size: string;
+    timeCreated: string;
+    updated: string;
+    selfLink?: string;
+    name?: string;
+    generation?: string;
+    contentType?: string;
+    metageneration?: string;
+    timeDeleted?: string;
+    timeStorageClassUpdated?: string;
+    md5Hash?: string;
+    mediaLink?: string;
+    contentEncoding?: string;
+    contentDisposition?: string;
+    contentLanguage?: string;
+    cacheControl?: string;
+    metadata?: {
+        [key: string]: string;
+    };
+    acl?: [{
+        kind?: string;
+        id?: string;
+        selfLink?: string;
+        bucket?: string;
+        object?: string;
+        generation?: string;
+        entity?: string;
+        role?: string;
+        email?: string;
+        entityId?: string;
+        domain?: string;
+        projectTeam?: {
+            projectNumber?: string;
+            team?: string;
+        };
+        etag?: string;
+    }];
+    owner?: {
+        entity?: string;
+        entityId?: string;
+    };
+    crc32c?: string;
+    componentCount?: string;
+    etag?: string;
+    customerEncryption?: {
+        encryptionAlgorithm?: string;
+        keySha256?: string;
+    };
+}

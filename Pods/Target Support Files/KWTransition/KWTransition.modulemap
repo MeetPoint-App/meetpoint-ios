@@ -1,0 +1,6 @@
+framework module KWTransition {
+  umbrella header "KWTransition-umbrella.h"
+
+  export *
+  module * { export * }
+}
