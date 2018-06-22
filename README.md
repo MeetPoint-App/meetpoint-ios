@@ -1,6 +1,6 @@
 # MeetPoint
 
-[![Build Status](https://www.bitrise.io/app/7a26c93ad5a8995a.svg?token=UiTe2gkL-Nq1vXmW6Opxiw&branch=master)](https://www.bitrise.io/app/) ![Platform](https://camo.githubusercontent.com/783873a5a5968925c13e4b7748d284c56e3e676d/68747470733a2f2f636f636f61706f642d6261646765732e6865726f6b756170702e636f6d2f702f4e53537472696e674d61736b2f62616467652e737667) [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://github.com/yusufkildan/MeetPoint/LICENSE)
+[![Build Status](https://www.bitrise.io/app/7a26c93ad5a8995a.svg?token=UiTe2gkL-Nq1vXmW6Opxiw&branch=master)](https://www.bitrise.io/app/) ![Platform](https://camo.githubusercontent.com/783873a5a5968925c13e4b7748d284c56e3e676d/68747470733a2f2f636f636f61706f642d6261646765732e6865726f6b756170702e636f6d2f702f4e53537472696e674d61736b2f62616467652e737667) [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://github.com/MeetPoint-App/meetpoint-ios/blob/master/LICENSE)
 
 
 Together is better! We believe that meeting with people and socializing should be easy. We designed MeetPoint to help you meet with people in real life.
@@ -37,7 +37,7 @@ $ cd MeetPoint
 ``` 
 $ pod install
 ```
-### Setup tokens
+#### Setup tokens
 - Open the Info.plist file and setup your `FacebookAppID`
 - Open the AppDelegate.swift and enter your Google Places api key( `GMSPlacesClient.provideAPIKey("ENTER YOUR API KEY HERE")` )
 #### Setup Firebase 
@@ -101,7 +101,7 @@ To create your own database please follow this steps:
 And finally open *MeetPoint.xcworkspace* and **run the app**
 
 ## License
-MeetPoint is licensed under Apache License 2.0. [See LICENSE](https://github.com/yusufkildan/MeetPoint/LICENSE) for details.
+MeetPoint is licensed under Apache License 2.0. [See LICENSE](https://github.com/MeetPoint-App/meetpoint-ios/blob/master/LICENSE) for details.
 
 ##
 <a target="_blank" href="http://itunes.apple.com/us/app/meetpoint-app/id1363547170"><img src="https://perfectradiousa.files.wordpress.com/2016/09/itunes-app-store-logo.png"  width="250" alt="App Store" /></a>
