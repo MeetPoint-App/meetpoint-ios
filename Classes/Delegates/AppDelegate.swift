@@ -82,12 +82,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         return true
     }
     
-    func application(_ application: UIApplication, open url: URL, sourceApplication: String?, annotation: Any) -> Bool {
-        let handled = FBSDKApplicationDelegate.sharedInstance().application(application,
-                                                                            open: url,
-                                                                            sourceApplication: sourceApplication,
-                                                                            annotation: annotation)
-        
+    func application(_ app: UIApplication, open url: URL, options: [UIApplicationOpenURLOptionsKey : Any] = [:]) -> Bool {
+        let handled: Bool = FBSDKApplicationDelegate.sharedInstance().application(app,
+                                                                                  open: url,
+                                                                                  sourceApplication: options[.sourceApplication] as? String,
+                                                                                  annotation: options[.annotation])
+
         return handled
     }
 
