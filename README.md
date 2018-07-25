@@ -103,6 +103,12 @@ And finally open *MeetPoint.xcworkspace* and **run the app**
 ## License
 MeetPoint is licensed under Apache License 2.0. [See LICENSE](https://github.com/MeetPoint-App/meetpoint-ios/blob/master/LICENSE) for details.
 
+## Author
+
+Yusuf KILDAN, kildanyusuf@gmail.com
+
+![image](http://stream1.gifsoup.com/webroot/animatedgifs/808678_o.gif)
+
 ##
 <a target="_blank" href="http://itunes.apple.com/us/app/meetpoint-app/id1363547170"><img src="https://perfectradiousa.files.wordpress.com/2016/09/itunes-app-store-logo.png"  width="250" alt="App Store" /></a>
 
